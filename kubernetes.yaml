@@ -33,6 +33,7 @@ kind: Service
 metadata:
   name: api-normas-industriais
 spec:
+  type: LoadBalancer 
   ports:
     - name: api-normas
       protocol: TCP
