@@ -18,7 +18,7 @@ spec:
       - name: sigo-normas
         image: docker.io/brunoferreirag/api-normas-industriais:latest
         ports:
-        - containerPort: 8006
+        - containerPort: 8007
           name: api-normas
         resources:
           requests:
