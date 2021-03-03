@@ -18,4 +18,4 @@ COPY --from=build ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY --from=build ${DEPENDENCY}/META-INF /app/META-INF
 COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /app
 ENV JAVA_TOOL_OPTIONS "-Xms256m -Xmx512m"
-ENTRYPOINT ["java","-cp","app:app/lib/*","br.com.indtextbr.services.gestaonormasindustriais.ApiNormasIndustriaisApplication"]
+ENTRYPOINT ["java","-cp","app:app/lib/*","br.com.indtextbr.services.apinormasindustriais.ApiNormasIndustriaisApplication"]
