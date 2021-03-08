@@ -77,11 +77,11 @@ public class NormaIndustrialService {
 			}
 			
 			else if (codigo==null && titulo !=null && versao !=null) {
-				return this.repository.findByCodigoContainsAndTituloContainsAndVersao(codigo,titulo, versao, page);
+				return this.repository.findByTituloContainsAndVersao(titulo, versao, page);
 			}
 			
 			
-			return this.repository.findAll(page);
+			return this.repository.findByCodigoContainsAndTituloContainsAndVersao(codigo,titulo,versao,page);
 		}
 		
 		return this.repository.findAll(page);
